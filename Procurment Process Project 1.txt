@@ -1,0 +1,548 @@
+Procurement Process Project
+MOTIVATION
+In this project, you will do
+the following for
+Procurement Process:
+
+PRODUCT
+
+ACKNOWLEDGEMENT
+
+SAP S4/HANA
+
+These are the GBI exercises
+developed by Simha R. Magal
+and Jeff Word.
+
+1. Create Purchase
+Requisition
+
+REVISED
+
+2. Create Purchase Order
+
+FOCUS
+
+3. Receive Shipment
+from Vendor
+4. Receive Invoice from
+Vendor
+5. Send Payment to
+Vendor
+
+4/25/2022
+
+Procurement
+Process
+
+AUTHORS
+Simha R. Magal
+Jeff Word
+Revised by:
+Ata Karbasi
+
+PREREQUISITES
+1. You should be familiar with navigation in SAP
+
+© 2022 Epistemy Press, LLC.
+Screenshots © 2022, SAP SE
+
+Section 1.1: Create Purchase Requisition
+Create Purchase
+Requisition
+(I)
+
+Create
+Purchase
+Order
+
+Receive Shipment
+from Vendor
+(III)
+
+(II)
+
+Receive Invoice
+from Vendor
+
+Send Payment
+to Vendor
+
+(IV)
+
+(V)
+
+Step: 1.1.1: In the “SAP Easy Access” screen, follow the navigation path below:
+SAP Easy Access Menu → Logistics → Materials Management → Purchasing → Purchase
+Requisition → Create
+Step: 1.1.1: In the “Create Purchase Requisition” screen, in the Item Overview section, enter the
+following information:
+Attribute
+Description
+Data Value
+Material
+Key uniquely identifying the material
+Road Helmets (RHMT1XXX)
+Quantity
+Specifies the quantity to be ordered
+10
+Deliv. Date
+Date on which the goods are to be delivered
+Current Date
+Plant
+Plant you wish to procure material to
+DC Plant Miami
+Stor. Location
+Storage location at which material are stored
+TG00
+Desired Vendor Vendor suggested by requisitioner to the
+Olympic Protective Gear(use your
+purchasing department for this purchase order.
+identifier)
+Step: 1.1.2: Click Enter
+
+.
+
+Step: 1.1.3: Click Enter
+met?”
+
+through each of the warning messages that say, “Can delivery date be
+
+Step: 1.1.4: Click Save
+.
+
+You will receive a message that says, “Purchase requisition number created”.
+1: What is the Purchase Requisition document number?
+
+
+Procurement Process Execution
+
+Page 2 of 9
+
+© 2022 Epistemy Press, LLC.
+
+Section 1.2: Create Purchase Order
+Create Purchase
+Requisition
+(I)
+
+Create
+Purchase
+Order
+
+Receive Shipment
+from Vendor
+(III)
+
+Receive Invoice
+from Vendor
+
+Send Payment
+to Vendor
+
+(IV)
+
+(V)
+
+(II)
+
+In this section, you create a purchase order from the purchase requisition and send it to the vendor.
+Step: 1.1.5: In the “SAP Easy Access” screen, follow the navigation path below:
+
+Navigation
+SAP Easy Access Menu → Logistics → Materials Management → Purchasing → Purchase Order
+→ Create → Vendor/Supplying Plant Known
+Step: 1.1.6: In the “Create Purchase Order” screen, enter the following information:
+Attribute
+Vendor
+
+Description
+Number and Name of the vendor
+
+Data Value
+Olympic Protective Gear (use
+your identifier)
+
+Step: 1.1.7: In the Header section, click on the Org. Data
+
+tab.
+
+Step: 1.1.8: Enter the following information:
+Attribute
+Purch. Org.
+Purch. Group
+Company Code
+
+Description
+Denotes the purchasing organization
+Key for a buyer or a group of buyers
+An organizational unit within financial accounting
+
+Step: 1.1.9: Click “Document Overview On”
+Step: 1.1.10: Click Selection Variant
+
+Data Value
+US00
+North America (N00)
+Global Bike Inc. (US00)
+
+.
+
+.
+
+Step: 1.1.11: Click My Purchase Requisitions.
+
+Procurement Process Execution
+
+Page 3 of 9
+
+© 2022 Epistemy Press, LLC.
+
+Step: 1.1.12: Highlight your purchase requisition by clicking it once, Do Not double click it.
+
+If you double click on the purchase requisition number, the system will display the
+requisition. You are no longer in the application to create a purchase order. If this
+happens, you must exit back to the main menu and start at the beginning of this
+section.
+
+
+
+Step: 1.1.13: Click Adopt
+.
+You receive an ERROR that says, “Net price must be greater than 0”.
+Step: 1.1.14: Enter the following information, in the Item Overview section:
+
+Attribute
+Material
+Net Price
+
+
+
+Description
+Uniquely identifies a material
+Net Price per unit
+
+Data Value
+Road Helmets
+22.00
+
+Step: 1.1.15: Click Enter
+
+.
+
+Step: 1.1.16: Click Enter
+
+through the warning messages that say, “Can delivery date be met?”.
+
+Step: 1.1.17: In the Header section, Click on the conditions
+tab.
+Make sure you use the Header section conditions tab. The conditions tab in the Item
+Details section only shows the net value for each line item.
+
+2: What is the net value of the entire purchase order?
+
+Step: 1.1.18: Click Save
+
+.
+
+3: What is the Purchase Order document number?
+
+
+Procurement Process Execution
+
+Page 4 of 9
+
+© 2022 Epistemy Press, LLC.
+
+Section 1.3: Receive Shipment from Vendor
+Create Purchase
+Requisition
+(I)
+
+Create
+Purchase
+Order
+
+Receive Shipment
+from Vendor
+(III)
+
+(II)
+
+Receive Invoice
+from Vendor
+
+Send Payment
+to Vendor
+
+(IV)
+
+(V)
+
+In this section, you receive the shipment that you ordered through the purchase order previously.
+Step: 1.1.19: In the “SAP Easy Access” screen, follow the navigation path below:
+
+Navigation
+SAP Easy Access Menu → Logistics → Materials Management → Inventory Management →
+Goods Movement → Goods Receipt → For Purchase Order → PO Number Known
+Step: 1.1.20: In the “Goods Receipt Purchase Order” screen, enter the following information:
+Attribute
+Description
+Data Value
+Executable Action
+Indicates the business transaction that you want to
+Goods Receipt
+(Dropdown)
+enter in the system.
+Reference Document
+Indicates the document you want to reference when Purchase Order
+(Dropdown)
+you enter the transaction.
+Purchasing Document
+Alphanumeric key uniquely identifying the
+Your Purchase
+Number
+document.
+Order Number
+
+The first two fields are the two dropdown fields to the left of the Purchasing
+Document Number field.
+Step: 1.1.21: Click Enter
+.
+
+If the “Detail data” section at the bottom of the screen is open, close it.
+Step: 1.1.22: At the bottom of the screen, enter the following information:
+Attribute
+Description
+Data Value
+Mat. Short Text
+Text that describes the material in more detail
+Road Helmet
+OK
+Indicates that you are posting goods movement for this item.
+Selected
+
+If the Details section of the screen is open, you will need to close it to select the first
+line item.
+
+
+
+Step: 1.1.23: Click Save
+.
+You will receive a message that says, “Material document posted”.
+
+4: What is the Goods Receipt document number?
+
+
+Procurement Process Execution
+
+Page 5 of 9
+
+© 2022 Epistemy Press, LLC.
+
+Section 1.4: Receive Invoice from Vendor
+Create Purchase
+Requisition
+(I)
+
+Create
+Purchase
+Order
+
+Receive Shipment
+from Vendor
+(III)
+
+(II)
+
+Receive
+Invoice from
+Vendor
+
+Send Payment
+to Vendor
+(V)
+
+(IV)
+
+You have received the following invoice from your vendor:
+You received an invoice that shows a total balance of $220 for 10 Road Helmets with a unit price of $22.
+
+
+The total in this invoice should match the total value of your purchase order.
+
+
+
+If the total of your purchase order is different from the total in this invoice, use the
+total of your purchase order in subsequent steps. This will prevent inconsistency in
+numbers.
+
+Procurement Process Execution
+
+Page 6 of 9
+
+© 2022 Epistemy Press, LLC.
+
+Step: 1.1.24: In the “SAP Easy Access” screen, follow the navigation path below:
+
+Navigation
+SAP Easy Access Menu → Logistics → Materials Management → Purchasing → Purchase Order
+→ Follow-On Functions → Logistics Invoice Verification
+Step: 1.1.25: In the “Enter Incoming Invoice: Company Code US##” screen, enter the following
+information:
+Attribute
+Description
+Data Value
+Invoice Date
+The issue date of the original document
+Today’s Date
+Amount
+Line item amount in document currency
+Invoice Total Amount ($220)
+Purchase Order
+Key uniquely identifying the document
+Your Purchase Order Number
+Document Number
+
+Input Your Purchase Order Document Number in the field to the right of the
+dropdown with Purchase Order/Scheduling Agreement in it. Use your F1 key for
+help!
+Step: 1.1.26: Click Enter
+
+
+.
+
+The
+right corner.
+
+icon should equal zero in the top
+
+Step: 1.1.27: At the bottom of the screen, enter the following information:
+Attribute
+Description
+Next Line
+Item
+Document Item in Invoice Document
+Specifies if you have compared the invoice with other items
+Booking OK
+Tax Code
+In the “Simulate Document in USD (Document currency)” pop-up, click Post
+
+You will receive a message that says, “Document no. created”.
+
+Data Value
+1
+Selected
+XI (Input Tax)
+.
+
+5: What is the Invoice document number?
+
+
+Procurement Process Execution
+
+Page 7 of 9
+
+© 2022 Epistemy Press, LLC.
+
+Section 1.5: Send Payment to Vendor
+Create
+Purchase
+Order
+
+Create Purchase
+Requisition
+(I)
+
+Receive Shipment
+from Vendor
+(III)
+
+(II)
+
+Receive Invoice
+from Vendor
+
+Send Payment
+to Vendor
+
+(IV)
+
+(V)
+
+In this section, you pay your vendor for the invoice in which you received in the previous step.
+Step: 1.1.28: In the “SAP Easy Access” screen, follow the navigation path below:
+
+Navigation
+SAP Easy Access Menu → Accounting → Financial Accounting → Accounts Payable → Document
+Entry → Outgoing Payment → Post
+Step: 1.1.29: In the “Post Outgoing Payments: Header Data” screen, enter the following
+information:
+Attribute
+Description
+Data Value
+Document Date
+Date on which the original document was issued
+Today’s Date
+
+Step: 1.1.30: In the “Bank Data” section of the screen, enter the following information:
+Attribute
+Bank Data Account
+Amount
+
+Description
+Account Number to be posted
+Line item in document currency
+
+Data Value
+Bank Account (100000)
+Amount Owed to this Vendor
+($220)
+
+Step: 1.1.31: In the “Open Item Selection” section of the screen, enter the following information:
+Attribute
+Description
+Data Value
+Account
+Number of the account from which the open items are to be
+Your Olympic
+selected for further processing.
+Protective Gear (use
+your identifier)
+
+6: What is the account number of the bank account?
+
+Step: 1.1.32: Click Enter
+.
+
+You will receive a message that says “1 item was selected”.
+
+
+The following screen shows you the unpaid invoices from this vendor. In the bottom
+right part of the screen, the amount entered should equal the assigned amount and
+thus would make the not assigned amount zero. If the not assigned amount is not
+equal to zero, click on the amount under the “USD Gross” column. This will tell you if
+there is more than one listed.
+
+Procurement Process Execution
+
+Page 8 of 9
+
+© 2022 Epistemy Press, LLC.
+
+
+
+Step: 1.1.33: Click Save
+.
+You will receive a message that says, “Document was posted in company”.
+
+7: What is the Payment document number?
+
+
+Procurement Process Execution
+
+Page 9 of 9
+
+© 2022 Epistemy Press, LLC.
+
+
